@@ -1,0 +1,211 @@
+* {
+    font-family: iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: orangered;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: black;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #000;
+}
+
+.header .navbar a:hover{
+    color: orangered;
+}
+
+div {
+    padding: 1rem 2%;
+}
+
+.home {
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+    background: linear-gradient(white, beige);
+}
+
+.home h1 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.home img {
+    position: static;
+    width: 100%;
+    margin-top: -250px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background: rgb(242, 208, 73);
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.8rem 3rem;
+}
+
+.btn a:hover {
+    color: orangered;
+}
+
+.services {
+    margin-top: -80px;
+    padding: 100px;
+}
+
+.services h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    color: #000;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(rem,1fr));
+    gap: 1.5rem;
+}
+.services .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+.services .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: orangered;
+    border: var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.services .box-container .box h3{
+    color: #000;
+    font-size: 2.2rem;
+}
+.services .box-container .box p{
+    color: #000;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.services .box-container .box{
+    background: rgb(247, 236, 39);
+}
+.services .box-container .box:hover h3{
+    color: #fff;
+}
+.services .box-container .box:hover p{
+    color: #fff;
+}
+.services .box-container .box:hover i{
+    color: #000;
+    background: #fff;
+}
+
+.special_offer{
+    position: relative;
+    height: 30rem;
+    background: linear-gradient(to top,rgba(21,17,231,0.5),rgba(0,136,79,0.6));
+    background-size: cover;
+    background-attachment: fixed;
+}
+.special_offer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+.special_offer .offer_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.special_offer .offer_container h1{
+    letter-spacing: 1.5px;
+    font-size: 6rem;
+}
+
+.special_offer .offer_container a{
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: #f9fafd;
+    background: #e71247;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.footer{
+    background: #f9fafd;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem ,14fr));
+    gap: 2rem;
+}
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color: #000;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: #000;
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: green;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}

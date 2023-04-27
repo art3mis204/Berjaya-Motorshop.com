@@ -1,0 +1,195 @@
+* {
+    font-family: iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: bisque;
+    letter-spacing: 1px;
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: orangered;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: black;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #000;
+}
+
+.header .navbar a:hover{
+    color: orangered;
+}
+
+div {
+    padding: 1rem 2%;
+}
+  
+.container {
+    background: linear-gradient(white, beige);
+    max-width: 1000px;
+    margin: 0px auto;
+    padding-top: 10rem;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+    display: flex;
+      
+}
+  
+.container-time {
+    background-color: rgba(0, 0, 0, .95);
+    padding: 50px;
+    outline: 3px dashed #998100;
+    outline-offset: -30px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+  
+.heading-days {
+    color:#998100;
+    font-size: 30px;
+  
+}
+  
+.heading-phone {
+    font-size: 20px;
+}
+
+.container-form {
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #000;
+}
+
+form {
+    display: grid;
+    grid-row-gap: 20px;
+  }
+
+form p {
+    font-weight: 600;
+  }
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+}
+  
+input,select {
+    pad: 10px 15px;
+}
+  
+.btn {
+    background-color: rgba(0, 0, 0, .95);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+  
+.btn:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+  
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .container-form  {
+        padding: 10px;
+    }
+    .heading-phone {
+        font-size: 17px;
+    }
+      
+}
+  
+@media screen and (min-width: 768px) and (max-width: 880px) {
+    .container-time {
+        padding: 30px;
+    }
+    .container-form  {
+        padding: 10px;
+    }
+           
+}
+
+.footer{
+    background: #f9fafd;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem ,14fr));
+    gap: 1rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color: #000;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: #000;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: green;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}

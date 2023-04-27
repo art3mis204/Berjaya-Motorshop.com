@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Service Booking</title>
+	<link rel="stylesheet" href="BookForm.css">
+	<script src="BookForm.js"></script>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <button type="button" onclick="alert('Welcome to Berjaya Motorshop Website')"><a href="Main-Page.html" class="logo"><span>Berjaya</span>Motorshop</a></button>
+        <nav class="navbar">
+            <a href="Main-Page.html">Home</a>
+            <a href="Product_Lists.html">Products</a>
+            <a href="BookForm.html">Booking</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+	    <div class="container">
+
+		    <div class="container-time">
+				<h2 class="heading">Time Open</h2>
+                <br>
+				<h3 class="heading-days">Sunday - Thursday</h3>
+                <br>
+				<p>8 am - 1 pm </p>
+				<p>2 pm - 6 pm </p>
+                <br>
+				<h3 class="heading-days">Friday and Saturday</h3>
+                <br>
+				<p>8 am - 12 pm </p>
+				<p>2 pm - 5 pm </p>
+                <br>
+				<br>
+				<h4 class="heading-phone">Call Us: 09-73489612</h4>
+		    </div>
+
+		    <div class="container-form">
+
+				<form action="#">
+
+					<h2 class="heading heading-yellow">motorcycle Booking Service</h2>
+
+					<div class="form-field">
+						<p>Your Name</p>
+						<input type="text" placeholder="Your Name">
+					</div>
+
+					<div class="form-field">
+						<p>Your Phone Number</p>
+						<input type="number" placeholder="Your phone number">
+					</div>
+
+					<div class="form-field">
+						<p>Date</p>
+						<input type="date">
+					</div>
+
+					<div class="form-field">
+						<p>Time</p>
+						<input type="time">
+					</div>
+
+					<div class="form-field">
+						<p>Type of Motorcycles</p>
+						<select name="select" id="#">
+							<option value="0">--Types of Motorcycles--</option>
+							<option value="1">Standard</option>
+							<option value="2">Moped</option>
+							<option value="3">Sports Bike</option>
+							<option value="4">Scooters</option>
+							<option value="5">Cruisers</option>
+							<option value="6">Touring</option>
+                            <option value="7">Others</option>
+						</select>
+					</div>
+
+					<div class="form-field">
+						<p>Type of Services</p>
+						<select name="select" id="#">
+							<option value="0">--Types of Services--</option>
+							<option value="1">Walkaround</option>
+							<option value="2">Battery</option>
+							<option value="3">Tires and Wheels</option>
+							<option value="4">Filters</option>
+							<option value="5">Brakes</option>
+							<option value="6">Fluids</option>
+                            <option value="7">Controls</option>
+                            <option value="8">Others</option>
+						</select>
+					</div>
+
+					<button onclick="myFunction()">Submit</button>
+
+					<p id="demo"></p>
+
+				</form>
+
+		    </div>
+
+	    </div>
+
+    </div>
+    
+    <section class="footer container-fluid">
+
+        <div class="box-container">
+            <div class="box">             
+                <h3>our branches</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Johor </a>
+                <a href="#"><i class="fa fa-map-marker"></i> Melaka </a>
+                <a href="#"><i class="fa fa-map-marker"></i> Pahang </a>
+                <a href="#"><i class="fa fa-map-marker"></i> Pulau Pinang</a>
+            </div>
+            <div class="box">
+                <h3>Menu</h3>
+                <a href="Main-Page.html"><i class="fa fa-arrow-right"></i> Home </a>
+                <a href="Product_Lists.html"><i class="fa fa-arrow-right"></i> Products </a>
+                <a href="BookForm.html"><i class="fa fa-arrow-right"></i> Services </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Linke</h3>
+                <a href="#"><i class="fa fa-phone"></i> 09-73489612 </a>
+                <a href="#"><i class="fa fa-envelopet"></i> BerjayaMotorshop@gmail.com </a>
+            </div>
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fa fa-facebook"></i> facebook </a>
+                <a href="#"><i class="fa fa-twitter"></i> twitter </a>
+                <a href="#"><i class="fa fa-instagram"></i> instgram </a>
+                <a href="#"><i class="fa fa-telegram"></i> telegram </a>
+            </div>
+        </div>
+    </section>        	
+	
+
+</body>
+</html>
